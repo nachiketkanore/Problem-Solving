@@ -66,7 +66,8 @@ int fibo(int n){
 
     called++;
     int nth = fibo(n-1) + fibo(n-2); //Top-Down with memoization
-    return cache[n] = nth;
+    cache[n] = nth;
+    return cache[n];
     //return fibo(n-1) + fibo(n-2); //Recursive
 }
 
