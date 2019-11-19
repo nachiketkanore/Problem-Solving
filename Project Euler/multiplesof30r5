@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    int testcases,sum;
+    char array[100]={0};
+    scanf("%d",&testcases);
+    int belowthis[testcases];
+    for(int t=0;t<testcases;t++)
+        scanf("%d",&belowthis[t]);
+
+    for(int m=1;m<=testcases;m++){
+    for(int x=1;x<belowthis[m-1];x++){
+        if(x%3==0 || x%5==0)
+            array[x-1]=x;
+    }
+        int sum=0;
+        for(int nachi=0;nachi<100;nachi++)
+            sum+=array[nachi];
+        printf("%d\n",sum);
+}
+    return 0;
+}
