@@ -63,6 +63,7 @@ struct segTree{
          int mid = (tl + tr) / 2;
          update(2*id + 1 ,tl , mid , ind, val);
          update(2*id + 2, mid + 1, tr, ind ,val);
+          //Merge function remaining
       }
    }
 
